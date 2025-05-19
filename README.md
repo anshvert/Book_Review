@@ -31,8 +31,7 @@ This is a RESTful API for a Book Review system built with Node.js, Express, and 
    ```
 2. **Install the Dependencies**:
    ```bash
-   git clone <https://github.com/anshvert/Book_Review.git>
-   cd book-review-api
+   pnpm i 
    ```
 3. **Configure Environment Variables: Create a .env file in the project root with the following content:**
    ```dotenv
