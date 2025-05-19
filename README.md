@@ -147,7 +147,7 @@ Use the following `curl` commands to test the API. Replace `<your-token>` with t
     curl "http://localhost:3000/api/books/search?q=Gatsby"
     ```
 
-# Design Decisions
+## Design Decisions
 
 ### MongoDB
 Chosen for its flexibility with JSON-like documents and ease of use with Mongoose for schema validation and queries.
@@ -172,7 +172,7 @@ Sensitive data like `MONGO_URI` and `JWT_SECRET` are stored in a `.env` file, ex
 
 ---
 
-# Assumptions
+## Assumptions
 
 - Users are limited to **one review per book**, enforced by a unique index in the Review model.
 - Reviews require a **rating (1–5)** and a **comment** to keep the system simple and consistent.
@@ -182,7 +182,7 @@ Sensitive data like `MONGO_URI` and `JWT_SECRET` are stored in a `.env` file, ex
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 - Add **input validation** with a library like Joi to ensure robust data integrity.
 - Implement **rate limiting** to prevent API abuse (e.g., using `express-rate-limit`).
